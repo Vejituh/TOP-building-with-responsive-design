@@ -47,3 +47,23 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*** Navs ***/
+.top-nav {
+    border: solid 1px black;
+    background: black;
+    height: 1.9em;
+    width: 100%;
+}
+.main-nav {
+    border: solid 1px turquoise;
+    background: white;
+    width: 100%;
+    height: 2.9em;
+}
+.bottom-nav {
+    border: 1px solid white;
+    background: yellow;
+    width: 100%;
+    height: 1.9em;
+}
