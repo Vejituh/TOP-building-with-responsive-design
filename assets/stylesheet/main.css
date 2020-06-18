@@ -67,3 +67,29 @@ table {
     width: 100%;
     height: 1.9em;
 }
+
+/*** Banner ***/
+.banner-news{
+    display: flex;
+    flex-direction: row;
+    height: 33.9em;
+    border: 1px solid brown;
+    margin: auto 0.587em;
+}
+.banner-news #main-banner {
+    border: 1px solid white;
+    background: red;
+    flex-basis: 66%;
+}
+.banner-news #smaller-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 34%;
+}
+.banner-news div:last-of-type div {
+    border: 1px solid black;
+    background: red;
+    height: 16.58em;
+    margin-left: 0.55em;
+}
