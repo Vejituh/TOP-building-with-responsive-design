@@ -100,13 +100,12 @@ table {
     max-width: 1155px;
     height: 32.75em;
 }
-.latest-news h3 {
+ h3 {
     font-family: sans-serif;
     font-size: 1.57em;
     letter-spacing: -.015em;
     font-weight: 700;
     color: #f42;
-    border: 1px solid black;
     padding-bottom: 0.3875em;
 }
 .news-container {
@@ -137,3 +136,65 @@ table {
     color: #bcbcbc;
     line-height: 1.6em;
 } 
+
+/*** funding section ***/
+.funding-section {
+    max-width: 1155px;
+    margin: 0 auto;
+}
+.funding-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+}
+.funding-section a {
+    color: red;
+}
+.funding-container {
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-between;
+}
+.funding-container-layout{
+    height: 18.5em;
+    max-width: 23.5%;
+    flex-basis: 23.5%;
+    margin: 1em 0 2.25em 0;
+    background-color: #fffaf8;
+}
+.funding-container-layout img {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    height: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    background-color: red;
+}
+.funding-container-layout a {
+    display: block;
+    margin-left: 2.3em;
+    line-height: 2em;
+}
+.funding-container div h4 {
+    color: white;
+    background-color: #f42;
+    padding: 0.8em 0;
+    padding-left: 6em;
+    font-weight: 700;
+}
+.funding-container-layout-header {
+    padding: 1em 0;
+    padding-left: 6em;
+    margin-bottom: 1.3em;
+    background-color: #ffebe7;
+}
+.funding-container-layout-footer {
+    border-top: 1px solid #ffcdc2;
+    margin-top: 1em;
+    padding: 1em;
+}
