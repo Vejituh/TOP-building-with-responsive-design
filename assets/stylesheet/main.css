@@ -288,3 +288,23 @@ table {
     margin-top: 2em;
     width: 100%;
 }
+
+/*** Footer ***/
+footer {
+    background-color: #000000;
+    padding-bottom: 2.5em;
+    color: white;
+    text-align: center;
+}
+footer p{
+    padding-top: 2.5em;
+}
+footer ul{
+    background-color: #131313;
+    display: flex;
+    justify-content: center;
+    padding: 5em 0;
+}
+footer ul li {
+    margin: 0 0.8em;
+}
