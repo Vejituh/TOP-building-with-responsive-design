@@ -203,6 +203,7 @@ table {
 .categories-section {
     max-width: 1155px;
     margin: 0 auto;
+    margin-bottom: 3em;
 }
 .categories-container {
     display: flex;
@@ -257,4 +258,33 @@ table {
     margin-left: 1.25em;
     border-bottom: 1px solid #ffcdc2;
     line-height: 1.25em;
+}
+
+/*** Deals section ***/
+.deals-section {
+    margin: 0 auto;
+    max-width: 1155px;
+}
+.deals-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.deals-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.deals-container div {
+    width: 23%;
+}
+.deals-container div h5 {
+    line-height: 1.5em;
+    font-weight: 700;
+}
+.deals-section img {
+    background: red;
+    min-height: 12em;
+    margin-top: 2em;
+    width: 100%;
 }
