@@ -30,7 +30,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    font-family: sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -95,9 +96,8 @@ table {
 
 /*** News ***/
 .latest-news {
-    border: 1px solid black;
     margin: 5.75em auto;
-    max-width: 72em;
+    max-width: 1155px;
     height: 32.75em;
 }
 .latest-news h3 {
@@ -107,7 +107,6 @@ table {
     font-weight: 700;
     color: #f42;
     border: 1px solid black;
-    box-sizing: border-box;
     padding-bottom: 0.3875em;
 }
 .news-container {
@@ -116,15 +115,25 @@ table {
     justify-content: space-between;
 }
 .news-container div {
-    border: 1px solid black;
-    max-height: 13.75em;
-    height: 13.75em;
-    width: 23.275%;
-    min-width: 15.75em;
-    margin: 1em 0 0.845em 0;
+    height: 12.5em;
+    max-width: 23.5%;
+    flex-basis: 23.5%;
+    margin: 1em 0 2.25em 0;
 }
 .news-container div img {
     background: red;
-    height: 61%;
+    height: 68%;
     width: 100%;
 }
+.news-container div h4 {
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.1em;
+    word-spacing: -.055em;
+    margin: 0.28em auto;
+}
+.news-container div p {
+    font-size: 0.75em;
+    color: #bcbcbc;
+    line-height: 1.6em;
+} 
