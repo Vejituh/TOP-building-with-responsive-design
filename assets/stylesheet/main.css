@@ -51,20 +51,59 @@ table {
 
 /*** Navs ***/
 .top-nav {
+    display: flex;
+    justify-content: space-between;
     background: black;
     height: 1.975em;
     width: 100%;
 }
+.top-nav a {
+    color: white;
+    line-height: 1.5em;
+    margin-right: 0.25em;
+}
+.top-nav div {
+    margin: 0 1em;
+}
 .main-nav {
+    display: flex;
+    justify-content: space-between;
     background: white;
     width: 100%;
     height: 2.975em;
+}
+.main-nav div:first-of-type {
+    flex-basis: 55%;
+    flex-shrink: 1;
+    align-self: center;
+    margin-left: 0.75em;
+}
+.main-nav div:first-of-type a {
+    margin: auto 0.25em;
+    color: black;
+}
+.main-nav div:last-of-type {
+    flex-basis: 45%;
+    border-left: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.main-nav div:last-of-type p {
+    margin: auto  2em;
+}
+.main-nav div:last-of-type button {
+    height: 2.5em;
+    margin: auto 1.5em;
+    white-space: nowrap;
 }
 .bottom-nav {
     background: yellow;
     width: 100%;
     height: 1.9em;
-    margin-left: 0.25em;
+    line-height: 2em;
+}
+.bottom-nav p {
+margin: auto 1em;
 }
 
 /*** Banner ***/
@@ -76,8 +115,14 @@ table {
     margin: auto 0.587em;
 }
 .banner-news #main-banner {
-    background: red;
     flex-basis: 66.5%;
+}
+.banner-news #main-banner img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-5-796x417.png");
 }
 .banner-news #smaller-banner{
     display: flex;
@@ -85,10 +130,30 @@ table {
     justify-content: space-between;
     flex-basis: 33.5%;
 }
-.banner-news div:last-of-type div {
-    background: red;
-    height: 16.58em;
+.banner-news #smaller-banner img {
+    background-size: 100% 100%;
+    background-position: 50%;
+}
+.banner-news #smaller-banner div:first-of-type img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/cc_series_empty-1200x628.jpg");
+}
+.banner-news #smaller-banner div:last-of-type img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-18-796x417.png");
+}
+.banner-news #smaller-banner div {
+    min-height: 16.58em;
+    max-height: 16.58em;
     margin-left: 0.55em;
+    overflow: hidden;
+    flex-basis: 33.5%;
 }
 
 /*** News ***/
@@ -117,7 +182,6 @@ table {
     margin: 1em 0 2.25em 0;
 }
 .news-container div img {
-    background: red;
     height: 68%;
     width: 100%;
 }
@@ -170,7 +234,6 @@ table {
     height: 60px;
     min-height: 60px;
     max-height: 60px;
-    background-color: red;
 }
 .funding-container-layout a {
     display: block;
@@ -220,7 +283,6 @@ table {
     margin-right: 0;
 }
 .categories-container-layout img {
-    background: red;
     height: 43%;
     width: 100%;
 }
@@ -246,7 +308,6 @@ table {
     max-width: 80px;
     min-height: 80px;
     max-height: 80px;
-    background-color: red;
 }
 .categories-container-layout ul li {
     list-style-type: disc;
@@ -280,7 +341,6 @@ table {
     font-weight: 700;
 }
 .deals-section img {
-    background: red;
     min-height: 12em;
     margin-top: 2em;
     width: 100%;
