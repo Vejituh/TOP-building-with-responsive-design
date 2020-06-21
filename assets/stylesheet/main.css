@@ -367,10 +367,16 @@ footer ul li {
     margin: 0 0.5em;
 }
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1200px) {
     .latest-news {
         width: 100%;
     }
+    .main-nav div:last-of-type {
+        flex-basis: 8%;
+    }
+    .main-nav div:last-of-type p, .main-nav div:last-of-type button {
+        display: none;
+        }
     h3 {
         margin-left: 1em;
     }
@@ -439,6 +445,12 @@ footer ul li {
 }
 
 @media all and (max-width: 780px){
+    .top-nav {
+        display: none;
+    }
+    .main-nav div:first-of-type {
+        display: none;
+    }
     .banner-news {
         flex-direction: column;
         justify-content: flex-start;
@@ -474,8 +486,9 @@ footer ul li {
         min-width: 90vw;
     }
     .news-container div h4 {
-        min-width: 80%;
+        max-width: 80%;
         max-height: 20px;
+        font-size: smaller;
         margin: 0 0 0 0.5em;
     }
     .news-container div p{
@@ -491,7 +504,7 @@ footer ul li {
     }
 
     .funding-section {
-        margin-top: 28em;
+        margin-top: 38em;
     }
     .funding-header span {
         display: flex;
@@ -515,6 +528,7 @@ footer ul li {
     .categories-container-layout {
         min-width: 98%;
         height: 50em;
+        margin-bottom: 3em;
     }
     .categories-container-layout img {
         min-height: 63%;
@@ -523,7 +537,8 @@ footer ul li {
         height: 80px;
     }
     .latest-info-main div {
-       min-width: 83.3%;
+       width: 83.3%;
+       max-width: 83.3;
        margin-bottom: 0.5px;
     }
     .latest-info-main img {
@@ -541,14 +556,16 @@ footer ul li {
         margin-bottom: 1em;
     }
     .deals-container div h5 {
-        min-width: 80%;
+        width: 80%;
+        max-width: 80%;
         max-height: 20px;
         margin: 0 0 0 0.5em;
     }
     .deals-container div p{
-        min-width: 60%;
-        margin-left: 6em;
-        margin-top: -2em;
+        width: 60%;
+        max-width: 60%;
+        margin-left: 4.5em;
+        margin-top: -1em;
     }
     .deals-container div img {
         max-width: 4em;
